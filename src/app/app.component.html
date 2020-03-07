@@ -1,0 +1,9 @@
+<div *ngIf="!nameEntered" style="text-align:center">
+  <label>Name : <input [(ngModel)]="name"/></label>
+  <div><button (click)="onEnterName()">Submit</button></div>
+</div>
+
+<div *ngIf="nameEntered" style="text-align:center">
+  <h1>Welcome {{ name }}</h1>
+  <div><button (click)="onEnterName()">Home</button></div>
+</div>
